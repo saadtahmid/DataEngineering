@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: de_module1_postgres
+    environment:
+      POSTGRES_USER: de_user
+      POSTGRES_PASSWORD: de_password
+      POSTGRES_DB: de_database
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U de_user -d de_database" ]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - de_local_net
+
+networks:
+  de_local_net:
+    driver: bridge
+
+volumes:
+  postgres_data:

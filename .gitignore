@@ -1,0 +1,28 @@
+# Python Virtual Environments & Cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data & Lake Files
+# We do not want to push large parquet files, duckdb instances, or raw CSVs to GitHub.
+*.parquet
+*.csv
+*.duckdb
+*.db
+/Module_02/data/
+
+# Docker Local Volumes
+postgres_data/
+minio_data/
+
+# Secrets (Just in case, though we use dummy passwords locally)
+.env
+.env.local
+
+# OS & Editor
+.DS_Store
+.vscode/
+.idea/
