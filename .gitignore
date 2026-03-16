@@ -34,3 +34,9 @@ logs/
 *.duckdb
 *.duckdb.wal
 
+
+# Spark/Iceberg
+metastore_db/
+derby.log
+spark-warehouse/
+

@@ -1,0 +1,11 @@
+services:
+  dagster_dev:
+    build: .
+    container_name: de_dagster
+    ports:
+      - "3000:3000"
+    volumes:
+      # Map the dbt project folder directly into the container so dagster can find it
+      - ../../../Module_04/lab/my_platform:/opt/dagster/dbt_project
+    environment:
+      - DAGSTER_HOME=/opt/dagster/dagster_home
