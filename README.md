@@ -7,7 +7,6 @@ Welcome to the Zero to Mastery Data Engineering course. This curriculum is desig
 ## 🛠️ Prerequisites
 * **OS:** Linux (Ubuntu 24.04 recommended) or macOS. Windows users should use WSL2.
 * **Core Tools:** Python 3.10+, Docker, and Docker Compose installed.
-* **Hardware:** A dedicated GPU is highly recommended for Module 8 (Local LLMOps & Vector generation).
 * **Mindset:** Readiness to read documentation and debug container networks.
 
 ---
@@ -100,18 +99,6 @@ Welcome to the Zero to Mastery Data Engineering course. This curriculum is desig
   - Deploy Redpanda via Docker.
   - Write a Python producer to simulate live sensor/transaction data.
   - Write a consumer script to calculate rolling real-time aggregations.
-
-### Module 8: Data Engineering for AI (Local LLMOps)
-*Prepare unstructured data for Generative AI and Large Language Models using local GPU hardware.*
-
-- [ ] **Lesson 8.1: Vector Embeddings & RAG**
-  - Chunking strategies and converting text into high-dimensional numerical arrays.
-- [ ] **Lesson 8.2: Vector Databases**
-  - Storing and querying embeddings for semantic search.
-- [ ] **💻 Hands-On Lab 8: The Local AI Backend**
-  - Deploy ChromaDB or Milvus locally via Docker.
-  - Serve a local embedding model using Ollama.
-  - Write a pipeline that chunks documents, generates embeddings, loads them into the vector database, and executes a semantic search.
 
 ---
 *Maintained by: [saadtahmid](https://github.com/saadtahmid)
