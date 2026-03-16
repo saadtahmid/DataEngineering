@@ -1,0 +1,2 @@
+# Using confluent_kafka as it is a highly optimized C extension rather than pure Python kafka libs
+confluent-kafka==2.3.0
