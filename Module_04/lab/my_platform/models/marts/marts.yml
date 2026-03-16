@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fct_user_metrics
+    description: "Fact table aggregating lifetime value and purchase behavior at the user level."
+    columns:
+      - name: user_name
+        tests:
+          - unique
+          - not_null
+      - name: total_purchases
+        tests:
+          - not_null
+      - name: lifetime_value
+        description: "Total purchase amount from all time"
+        tests:
+          - not_null

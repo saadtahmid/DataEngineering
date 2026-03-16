@@ -26,3 +26,11 @@ minio_data/
 .DS_Store
 .vscode/
 .idea/
+
+# dbt ignores
+target/
+dbt_packages/
+logs/
+*.duckdb
+*.duckdb.wal
+

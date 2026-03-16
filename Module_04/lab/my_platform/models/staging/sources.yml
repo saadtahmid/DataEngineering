@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: datalake
+    description: "Raw Parquet files from our MinIO Data Lake"
+    tables:
+      - name: raw_events
+        description: "Partitioned events data loaded from Polars"
+        meta:
+          external_location: "s3://data-lake/bronze/events/**/*.parquet"

@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_events
+    description: "Staging table for raw user events sourced directly from MinIO"
+    columns:
+      - name: event_id
+        description: "Primary key for the event"
+        tests:
+          - unique
+          - not_null
+      - name: user_name
+        description: "User who triggered the event"
+        tests:
+          - not_null
+      - name: purchase_amount
+        description: "Amount of purchase."
+        tests:
+          - not_null
